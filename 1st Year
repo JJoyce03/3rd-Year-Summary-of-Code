@@ -7,9 +7,11 @@
   /* Fonts from Google Fonts - more at https://fonts.google.com */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
 
 body {
-  background-color: white;
+  background-color: #F7F7FF;
   font-family: "Open Sans", sans-serif;
   padding: 5px 25px;
   font-size: 18px;
@@ -22,15 +24,34 @@ h1 {
   font-size: 32px;
   color: #000000;
   margin-top:7%;
+  text-align:center;
 }
+
+h2 {
+	font-family:"Old Standard TT";
+	font-weight:heavy;
+
+}
+
+h3 {
+	font-family:"Old Standard TT";
+	font-weight:heavy;
+	
+}
+
+p {
+	font-family:"PT Serif";
+}
+
 
 .navbar {
   overflow: hidden;
-  background-color: #000000;
-  position:fixed;
+  background-color: #1E3888;
+  position:sticky;
   top:0;
   width:100%;
   border-radius: 8px;
+  z-index:5;
   
   
 }
@@ -46,14 +67,14 @@ h1 {
 }
 
 .navbar a:hover {
-  color: #f5b629;
-  background-color: #6a6a6a;
+  color: #B6FEFF;
+  background-color: #23B2FF;
   
 }
 
 .navbar a.active {
   border-width:thin;
-  background-color: #727272;
+  background-color: #2EC4B6;
   
 }
 
@@ -84,6 +105,35 @@ h1 {
   }
 }
 
+#topimg {
+	
+	max-height:600px;
+	height:auto;
+	width:60%;
+	z-index:-1;
+
+	
+}
+
+
+div.img-relative {
+	position:relative;
+	width:100%;
+	height:600px;
+	
+
+}
+
+#left {
+	float:left;
+
+}
+
+#right {
+	float:right;
+
+}
+
 
   
   
@@ -107,7 +157,18 @@ h1 {
       </a>
     </div>
     
+	<div class="img-relative">
+	<div class="img-absolute"><center><img id="topimg" src="AI code pic.png" ></center></div>
+	</div>
+	
     <h1>My 1st Year Coding Showcase</h1>
+	
+	<h2>Group Scratch Project - AI Race Car</h2>
+	
+	<p>In this project, I wanted to have a race between a user-controlled car and another car. I realised we needed a car controlled by Artificial Intelligence. This was the biggest challenge I faced during this project. In the end, a fellow coder assisted me in the creation of my very first Artificial Intelligence. Long story short, it worked! We successfully completed a race against the AI car. (That is, we didn’t win, but I would leave that down to our superior coding skills!) Overall, I think the project was a success.</p>
+	
+	<img id="left" src="scratch home pic.png">
+	<img id="right" src="ai car.png">
     
     <script>
 	function myFunction() {

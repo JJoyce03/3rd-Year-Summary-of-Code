@@ -7,9 +7,11 @@
   /* Fonts from Google Fonts - more at https://fonts.google.com */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
 
 body {
-  background-color: white;
+  background-color: #F7F7FF;
   font-family: "Open Sans", sans-serif;
   padding: 5px 25px;
   font-size: 18px;
@@ -22,13 +24,31 @@ h1 {
   font-size: 32px;
   color: #000000;
   margin-top:7%;
+  text-align:center;
 }
+
+h2 {
+	font-family:"Old Standard TT";
+	font-weight:heavy;
+
+}
+
+h3 {
+	font-family:"Old Standard TT";
+	font-weight:heavy;
+	
+}
+
+p {
+	font-family:"PT Serif";
+}
+
 
 
 .navbar {
   overflow: hidden;
-  background-color: #000000;
-  position:fixed;
+  background-color: #1E3888;
+  position:sticky;
   top:0;
   width:100%;
   border-radius: 8px;
@@ -39,7 +59,7 @@ h1 {
 .navbar a {
   color: white;
   text-align:center;
-  padding: 10px 30px;
+  padding: 10px 20px;
   display:block;
   float:left;
   text-decoration: none;
@@ -47,14 +67,14 @@ h1 {
 }
 
 .navbar a:hover {
-  color: #f5b629;
-  background-color: #6a6a6a;
+  color: #B6FEFF;
+  background-color: #23B2FF;
   
 }
 
 .navbar a.active {
   border-width:thin;
-  background-color: #727272;
+  background-color: #2EC4B6;
   
 }
 
@@ -85,6 +105,23 @@ h1 {
   }
 }
 
+#thimble logo {
+	float:right;
+	max-height:500px;
+	height:100%;
+	max-width:600px;
+	width:100%;
+
+}
+
+#thimble css {
+	float:left;
+	max-height:500px;
+	height:100%;
+	max-width:600px;
+	width:100%;
+
+}
 
   
   
@@ -110,10 +147,16 @@ h1 {
     
     <h1>My 3rd Year Coding Showcase</h1>
 	
+	<h2>Individual HTML Project - My Football Website</h2>
 	
+	<p>In third year, we began learning HTML. This allowed us to code and create websites. I worked by myself for this project, so I decided to do my project on something I had an interest in: football. 
+
+	<br><br>I used the website Thimble to create my website, as it split the screen so you had a live update of what your code would make a webpage look like. On my website, I stretched my coding abilities by using a vast range of code, such as <b>tables, marquee, div, class, id, linear gradient, float</b> and I learned how to change the colour of links. I used a table to list the 5 biggest leagues in the world, what countries they are hosted in and who are the current title holders of each league. I fully customised and edited the table so that each block was the home colours of the title holder of that league. I made the title of the website move in a rotation using <b>marquee</b>. I used <b>div</b> to group paragraphs of information together so it was easier to style all of them. I used external links which led you to the current league table of that league, and I used internal links to make it easier to navigate the page. Here is a link to my website on Thimble:
+</p>
+	<br><a href="https://thimble.mozilla.org/en-US/user/soggy-biscuit123/1896940/">My Football Website on Thimble</a>
 	
-	
-	
+	<img id="thimble logo" src="thimble logo.png">
+	<img id="thimble css" src="thimble css.png">
 	
 	
     
